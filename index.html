@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My Certification Assignment Exam</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Mozilla is cool for everyone</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
-
-    <p>At Mozilla, we’re a global community of</p>
-
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
-
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Automated Deployment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00ffcc;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: #00ffcc;
+            color: #1e3c72;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pipeline Success!</h1>
+        <p>This page was compiled and deployed completely automatically by your Jenkins CI/CD pipeline using a GitHub Webhook trigger.</p>
+        <div class="status-badge">Live on Port 99</div>
+    </div>
+</body>
 </html>
